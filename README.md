@@ -2,8 +2,13 @@
 
 DeepSeek Harness 插件市场（Plugin Marketplace）。
 
+> **源码**：https://github.com/zr-promise/dsh-plugin-market（`dsh plugin --profile web add github:zr-promise/dsh-plugin-market`）
+
 在 Web 会话的对话 Tab 栏新增「插件市场」页签（与「轨迹」并列），用于浏览、搜索、查看详情并安装
 DSH 插件；同时向 Agent 注册 `market_search` / `market_info` / `market_install` / `market_debug` 四个工具。
+
+> 包名说明：`@dsh-external/dsh-plugin-market` 是本地开发用名（非 npm 真实 scope）；如发布 npm，
+> 请使用 `@zr-promise/dsh-plugin-market`（已确认可用），详见 `PUBLISH.md`。
 
 ## 功能
 
