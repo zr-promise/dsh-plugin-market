@@ -8,13 +8,18 @@ DeepSeek Harness 插件市场（Plugin Marketplace）：在 DSH Web 对话页增
 
 ## 安装
 
-**第一步：命令行安装（唯一自举方式）**
+以下两种方式任选其一，安装完成后**重启 DSH**，对话页出现「插件市场」Tab 即表示安装成功。
+
+**方式一：命令行**
 
 ```bash
 dsh plugin --profile web add github:zr-promise/dsh-plugin-market
 ```
 
-安装完成后**重启 DSH**，对话页出现「插件市场」Tab 即表示安装成功。
+**方式二：发给 DSH 助手**
+
+在 DSH 对话页的输入框中粘贴上面的命令（或直接说"安装 dsh-plugin-market 插件"），
+助手会代为执行安装，无需自己操作终端。
 
 **安装之后**：
 
