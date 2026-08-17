@@ -1,0 +1,6 @@
+# dsh-plugin-market bundle patch: inserts the marketplace plugin row into any
+# profile that lists @dsh-external/dsh-plugin-market in its dsh.profile.bundles.
+# The row loads the plugin by package name from the profile's node_modules.
+- insert:
+    - id: dsh-plugin-market
+      name: '@dsh-external/dsh-plugin-market'

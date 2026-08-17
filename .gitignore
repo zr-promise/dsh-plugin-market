@@ -1,0 +1,8 @@
+# 依赖与构建产物（clone 后由 pnpm/开发者自行处理）
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地测试/临时文件
+*.tmp
