@@ -18,7 +18,7 @@ dsh plugin --profile web add github:zr-promise/dsh-plugin-market
 
 **方式二：发给 DSH 助手**
 
-在 DSH 对话页的输入框中粘贴上面的命令（或直接说"安装 dsh-plugin-market 插件"），
+在 DSH 对话页的输入框中粘贴上面的命令，
 助手会代为执行安装，无需自己操作终端。
 
 **安装之后**：
