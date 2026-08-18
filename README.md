@@ -50,7 +50,7 @@ dsh plugin --profile web add github:zr-promise/dsh-plugin-market
 - 列出所有已安装的第三方插件，显示仓库名 / 版本 / 本地更新时间 / 类型 / 套装信息。
 - **详情页**：展示本地路径、关联组件/预设、GitHub 信息、README 与清单文件。
 - **检查更新**：逐个或全部检查。优先比较版本号，版本一致不会误报；本地缺少仓库信息时，会回退查询 npm registry 的 repository 元数据；仍无法比较版本时才按仓库推送时间做启发式判断。
-- **一键更新**：检测到新版本时显示「更新」按钮。git 源码安装走 `git fetch + reset`（无 `.git` 且目录独立则重新 clone）；npm 安装走 `pnpm add <name>@latest`。更新前自动备份，失败自动回滚；更新后自动重装依赖并做入口预检，重启 DSH 生效。
+- **一键更新**：检测到新版本时显示「更新」按钮。git 源码安装走 `git fetch + reset`（无 `.git` 且目录独立则重新 clone）；npm 安装走 `pnpm add <name>@<最新版>`（显式指定版本，避免 pnpm v11 的 minimumReleaseAge 静默装到旧版）。更新前自动备份，失败自动回滚；更新后自动重装依赖并做入口预检，重启 DSH 生效。
 - **卸载**：两段式确认卸载，连同源码目录删除。官方 `@deepseek-ai/*` 插件不可卸载。
 - **套装卸载**：如果插件属于某个套装（如 `dsh-routing-suite`），卸载时会连带删除关联的源码目录和 agent preset，并在界面明确展示“关联组件/预设”。
 
